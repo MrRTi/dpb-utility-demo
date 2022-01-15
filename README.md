@@ -31,6 +31,8 @@ Run app
 
         make app
 
+Go to [Site with example](http://localhost:3000)
+
 ## Github Actions
 
 - [Documentation](https://docs.github.com/en/actions)
@@ -47,6 +49,8 @@ Run app
 
         rake rollbar:test
 
+   or go to [Page what will return error](http://localhost:3000/errors)
+
 1. Check errors at
 
    `https://rollbar.com/YOUR_ACCOUNT/all/items/`
@@ -58,13 +62,15 @@ Run app
 
 - [Github](https://github.com/flyerhzm/bullet)
 
-1. **TBD: Add notes**
+- [Example with N+1](http://localhost:3000/actors_n_plus_one)
+- [Example without N+1](http://localhost:3000/actors)
 
 ## [New relic](https://newrelic.com/)
 
 - [Github](https://github.com/newrelic/newrelic-ruby-agent)
 
-1. **TBD**
+1. Make several requests with N+1 and without.
+2. Look at dashboard in New Relic.
 
 ## Coverage
 

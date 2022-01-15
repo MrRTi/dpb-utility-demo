@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Actor</th>
+      <th>Movies</th>
+      <th>Characters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% actors.each do |actor| %>
+      <tr>
+        <td><%= actor.full_name %></td>
+        <td><%= actor.movies.map(&:name).join(', ') %></td>
+        <td><%= actor.characters.map(&:name).join(', ') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

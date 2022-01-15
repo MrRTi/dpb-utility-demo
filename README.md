@@ -1,24 +1,45 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prepare
 
-Things you may want to cover:
+1. Copy `.env.example` into `.env`
+2. Set your `post_server_item` token as `ROLLBAR_ACCESS_TOKEN` in `.env`
 
-* Ruby version
+    Token could be found at
+    `https://rollbar.com/YOUR_ACCOUNT/YOUR_PROJECT/settings/access_tokens/`
 
-* System dependencies
+    where
+    - `YOUR_ACCOUNT` - your Rollbar account name
+    - `YOUR_PROJECT` - your project name in this account
 
-* Configuration
+## Github Actions
 
-* Database creation
+[Documentation](https://docs.github.com/en/actions)
 
-* Database initialization
+1. TBD
+## Rollbar
 
-* How to run the test suite
+[Documentation](https://docs.rollbar.com/docs)
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Set token in `.env`. Look Prepare section`
+1. Send test error to Rollbar
 
-* Deployment instructions
+        rake rollbar:test
 
-* ...
+1. Check errors at
+
+   `https://rollbar.com/YOUR_ACCOUNT/all/items/`
+
+   where
+    - `YOUR_ACCOUNT` - your Rollbar account name
+
+## Bullet
+
+1. TBD
+## New relic
+
+1. TBD
+
+## Coveralls
+
+1. TBD

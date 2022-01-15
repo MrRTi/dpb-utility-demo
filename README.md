@@ -69,7 +69,7 @@ Go to [Site with example](http://localhost:3000)
 
 - [Github](https://github.com/newrelic/newrelic-ruby-agent)
 
-1. Make several requests with N+1 and without.
+1. Make several requests with and without N+1.
 2. Look at dashboard in New Relic.
 
 ## Coverage
@@ -82,7 +82,7 @@ Look at `/coverage` directory for coverage report
 
 ### [Coveralls](https://coveralls.io)
 
-- [Github](https://github.com/lemurheavy/coveralls-ruby)
 - [Documention](https://docs.coveralls.io/ruby-and-rails)
+- [Github Action](https://github.com/marketplace/actions/coveralls-github-action)
 
 Look at [CoverAlls site](https://coveralls.io/repos) for reports

@@ -149,6 +149,7 @@ GEM
       net-protocol
       timeout
     netrc (0.11.0)
+    newrelic_rpm (8.3.0)
     nio4r (2.5.8)
     nokogiri (1.13.1-x86_64-linux)
       racc (~> 1.4)
@@ -261,6 +262,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  newrelic_rpm
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.1)

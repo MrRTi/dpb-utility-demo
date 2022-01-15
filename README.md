@@ -12,7 +12,7 @@
     - `YOUR_ACCOUNT` - your Rollbar account name
     - `YOUR_PROJECT` - your project name in this account
 
-
+1. Set `NEWRELIC_LICENSE_KEY` at `.env`
 1. Set `COVERALLS_REPO_TOKEN` at `.env`
 
 
@@ -20,9 +20,10 @@
 
 - [Documentation](https://docs.github.com/en/actions)
 
-1. **TBD**
+1. **TBD: Add actions**
+1. **TBD: Add notes**
 
-## Rollbar
+## [Rollbar](https://rollbar.com/)
 
 - [Documentation](https://docs.rollbar.com/docs)
 
@@ -42,9 +43,11 @@
 
 - [Github](https://github.com/flyerhzm/bullet)
 
-1. **TBD**
+1. **TBD: Add notes**
 
-## New relic
+## [New relic](https://newrelic.com/)
+
+- [Github](https://github.com/newrelic/newrelic-ruby-agent)
 
 1. **TBD**
 
@@ -56,7 +59,7 @@
 
 Look at `/coverage` directory for coverage report
 
-### Coveralls
+### [Coveralls](https://coveralls.io)
 
 - [Github](https://github.com/lemurheavy/coveralls-ruby)
 - [Documention](https://docs.coveralls.io/ruby-and-rails)

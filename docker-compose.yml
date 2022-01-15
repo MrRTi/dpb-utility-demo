@@ -15,6 +15,7 @@ services:
     depends_on:
       - db
     environment: &web-environment
+      HOSTNAME: $HOSTNAME
       BUNDLE_PATH: /bundle_cache
       GEM_HOME: /bundle_cache
       GEM_PATH: /bundle_cache

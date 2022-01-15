@@ -2,6 +2,8 @@
 
 ## Prepare
 
+### Set Secrets
+
 1. Copy `.env.example` into `.env`
 1. Set your `post_server_item` token as `ROLLBAR_ACCESS_TOKEN` in `.env`
 
@@ -15,6 +17,19 @@
 1. Set `NEWRELIC_LICENSE_KEY` at `.env`
 1. Set `COVERALLS_REPO_TOKEN` at `.env`
 
+### Build
+
+To build:
+
+        make app-build
+
+To create migrate and populate database:
+
+        make app-init
+
+Run app
+
+        make app
 
 ## Github Actions
 

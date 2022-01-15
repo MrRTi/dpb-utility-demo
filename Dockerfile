@@ -11,9 +11,8 @@ RUN gem install bundler:2.2.30 rubygems-bundler
 RUN mkdir -p /app
 WORKDIR /app
 
-COPY Gemfile Gemfile
-# COPY Gemfile.lock Gemfile.lock
-RUN bundle install --jobs 3
+COPY Gemfile Gemfile.lock  ./
+RUN bundle install --jobs 5
 
 ADD . /app
 

@@ -5,7 +5,7 @@
 
 ## Prepare
 
-### Set Secrets
+### Set Variables
 
 1. Copy `.env.example` into `.env`
 1. Set your `post_server_item` token as `ROLLBAR_ACCESS_TOKEN` in `.env`
@@ -18,6 +18,8 @@
     - `YOUR_PROJECT` - your project name in this account
 
 1. Set `NEWRELIC_LICENSE_KEY` at `.env`
+
+[Optional] You could also setup `GITHUB_USERNAME`, `GITHUB_REPOSITORY_NAME` and `ROLLBAR_PROJECT_NAME` to generate correct links at main page
 
 ### Build
 
@@ -33,7 +35,8 @@ Run app
 
         make app
 
-Go to [Site with example](http://localhost:3000)
+Go to [Site with example](http://localhost:3000/)
+Go to [Site with example at Russian](http://localhost:3000/?locale=ru)
 
 ## Github Actions
 

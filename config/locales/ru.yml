@@ -1,0 +1,18 @@
+ru:
+  locale: 'Язык:'
+  notes:
+    hide_token: Токен через переменные среды!
+    coverage:
+      not_stored_in_repo: Покрытие не хранится в репозитории, папка с ним дожна быть добалена в '.gitignore'
+      generate_on_demand: Генерируй покрытие только на CI или по спец. запросу
+  external_links:
+    github_actions: Страница Actions на Github
+    dashboards:
+      rollbar: Страница с ошибками в Rollbar
+      new_relic: New Relic дашборд
+      coveralls: Coveralls дашборд
+  internal_links:
+    error_page: Страница с ошибкой
+    no_n_plus_one_page: Страница без N+1
+    n_plus_one_page: Страница с N+1
+    coverage: Покрытие этого приложения

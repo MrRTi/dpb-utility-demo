@@ -30,4 +30,20 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  locale: 'Locale:'
+  notes:
+    hide_token: Keep token in env variables!
+    coverage:
+      not_stored_in_repo: Coverage is not stored in repository and folder with it should be added into ''.gitignore'
+      generate_on_demand: Generate coverage at CI or at demand
+  external_links:
+    github_actions: Actions page at github
+    dashboards:
+      rollbar: Errors collected at Rollbar
+      new_relic: New Relic dashboard
+      coveralls: Coveralls dashboard
+  internal_links:
+    error_page: Page what will raise an error
+    no_n_plus_one_page: Page without N+1
+    n_plus_one_page: Page with N+1
+    coverage: Coverage for this app

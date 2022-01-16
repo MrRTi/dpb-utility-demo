@@ -1,6 +1,6 @@
 require 'coverage_helper'
 
-CoverageHelper.start!
+CoverageHelper.start! if ENV['COVERAGE']
 
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"

@@ -25,14 +25,7 @@ jobs:
         env:
           COVERAGE: true
           RAILS_ENV: test
-          CI: true
         run: docker-compose --file docker-compose.ci.yml run ci make tests
-
-      - name: Check coverage existence
-        id: check_files
-        uses: andstor/file-existence-action@v1
-        with:
-          files: "app/coverage/lcov.info, coverage/lcov.info, ./coverage/lcov.info"
 
       - name: Archive coverage artifacts
         uses: actions/upload-artifact@v2
@@ -40,7 +33,6 @@ jobs:
           name: coverage
           path: |
             coverage
-            public/coverage
 
       - name: Send report to Coveralls
         uses: coverallsapp/github-action@master

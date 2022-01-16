@@ -5,14 +5,12 @@ services:
   ci:
     build: .
     volumes: &web-volumes
-      - ./coverage:/app/coverage
-      - ./public/coverage:/app/public/coverage
+      - ./coverage:/app/public/coverage
     depends_on:
       - db
     environment:
       - COVERAGE
       - RAILS_ENV
-      - CI
       - DATABASE_HOST=db
       - DATABASE_USERNAME=postgres
       - DATABASE_PASSWORD=postgres

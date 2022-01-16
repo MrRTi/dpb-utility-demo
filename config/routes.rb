@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  root "web/home#show", defaults: { format: :html }
+  root 'web/home#show', defaults: { format: :html }
 
   scope module: :web, defaults: { format: :html } do
     resources :actors, only: [:index]

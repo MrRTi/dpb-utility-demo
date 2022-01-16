@@ -1,15 +1,15 @@
 # frozen_string_literal: true
-GITHUB_USERNAME = ENV.fetch('GITHUB_USERNAME') { 'fake_name' }
-GITHUB_REPOSITORY_NAME = ENV.fetch('GITHUB_REPOSITORY_NAME') { 'fake_repo' }
-ROLLBAR_PROJECT_NAME = ENV.fetch('ROLLBAR_PROJECT_NAME') { 'fake' }
+
+GITHUB_USERNAME = ENV.fetch('GITHUB_USERNAME', 'fake_name')
+GITHUB_REPOSITORY_NAME = ENV.fetch('GITHUB_REPOSITORY_NAME', 'fake_repo')
+ROLLBAR_PROJECT_NAME = ENV.fetch('ROLLBAR_PROJECT_NAME', 'fake')
 
 module Web
   class HomeController < Web::ApplicationController
     helper_method :actions_link, :rollbar_link, :coveralls_link
 
     def show
-
-      @new_relic_dashboard='https://one.eu.newrelic.com/launcher/'
+      @new_relic_dashboard = 'https://one.eu.newrelic.com/launcher/'
     end
 
     private

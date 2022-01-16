@@ -1,4 +1,3 @@
-
 module CoverageHelper
   require 'simplecov'
   require 'simplecov-lcov'
@@ -12,9 +11,9 @@ module CoverageHelper
         coverage_dir('public/coverage')
 
         formatter(SimpleCov::Formatter::MultiFormatter.new([
-          SimpleCov::Formatter::LcovFormatter,
-          SimpleCov::Formatter::HTMLFormatter,
-        ]))
+                                                             SimpleCov::Formatter::LcovFormatter,
+                                                             SimpleCov::Formatter::HTMLFormatter
+                                                           ]))
 
         add_filter %w[version.rb initializer.rb]
       end

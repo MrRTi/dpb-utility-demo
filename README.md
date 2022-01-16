@@ -90,6 +90,9 @@ New relic config is located at `config/newrelic.yml`
 
 ## Coverage
 
+- Coverage folder should be added into `.gitignore`
+- Generate coverage at CI or at demand
+
 ### SimpleCov
 
 - [Github](https://github.com/simplecov-ruby/simplecov)

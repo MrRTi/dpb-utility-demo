@@ -94,4 +94,4 @@ Look at `/coverage` directory for coverage report
 - [Documention](https://docs.coveralls.io/ruby-and-rails)
 - [Github Action](https://github.com/marketplace/actions/coveralls-github-action)
 
-Look at [CoverAlls site](https://coveralls.io/repos) for reports
+Look at [Coveralls site](https://coveralls.io/repos) for reports

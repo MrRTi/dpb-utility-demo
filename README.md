@@ -15,7 +15,6 @@
     - `YOUR_PROJECT` - your project name in this account
 
 1. Set `NEWRELIC_LICENSE_KEY` at `.env`
-1. Set `COVERALLS_REPO_TOKEN` at `.env`
 
 ### Build
 

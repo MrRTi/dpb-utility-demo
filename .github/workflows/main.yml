@@ -25,7 +25,7 @@ jobs:
         env:
           COVERAGE: true
           RAILS_ENV: test
-        run: docker-compose --file docker-compose.ci.yml run ci make tests
+        run: docker-compose --file docker-compose.ci.yml run ci bundle exec rails test
 
       - name: Archive coverage artifacts
         uses: actions/upload-artifact@v2

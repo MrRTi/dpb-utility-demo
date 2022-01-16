@@ -9,6 +9,3 @@ app:
 
 init-db:
 	bundle exec rails db:create db:migrate
-
-tests:
-	bundle exec rake test

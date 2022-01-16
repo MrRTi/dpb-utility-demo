@@ -1,7 +1,8 @@
-# README
+# DPB Utility demo
 
-[![Coverage Status](https://coveralls.io/repos/github/MrRTi/dpb-utiliy-lesson/badge.svg?branch=main)](https://coveralls.io/github/MrRTi/dpb-utiliy-lesson?branch=main)
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FMrRTi%2Fdpb-utiliy-lesson%2Fbadge%3Fref%3Dmain&style=popout)](https://actions-badge.atrox.dev/MrRTi/dpb-utiliy-lesson/goto?ref=main)
+[![Coverage Status](https://coveralls.io/repos/github/MrRTi/dpb-utiliy-demo/badge.svg?branch=main)](https://coveralls.io/github/MrRTi/dpb-utiliy-demo?branch=main)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FMrRTi%2Fdpb-utiliy-demo%2Fbadge%3Fref%3Dmain&style=popout)](https://actions-badge.atrox.dev/MrRTi/dpb-utiliy-demo/goto?ref=main)
+
 ## Prepare
 
 ### Set Secrets
@@ -38,7 +39,7 @@ Go to [Site with example](http://localhost:3000)
 
 - [Documentation](https://docs.github.com/en/actions)
 
-Workflow is set in `.github/workflows/main.yml` for `main` branch
+Github actions config for `main` branch is located at `.github/workflows/main.yml`
 
 Steps in actions:
 
@@ -53,14 +54,16 @@ Steps in actions:
 
 - [Documentation](https://docs.rollbar.com/docs)
 
+Rollbar config for server side located at `config/initializers/rollbar.rb`
+
 1. Set token in `.env`. Look [Prepare section](#prepare)
-1. Send test error to Rollbar
+2. Send test error to Rollbar
 
         rake rollbar:test
 
-   or go to [Page what will return error](http://localhost:3000/errors)
+   or go to [Page what will raise an error](http://localhost:3000/errors)
 
-1. Check errors at
+3. Check errors at
 
    `https://rollbar.com/YOUR_ACCOUNT/all/items/`
 
@@ -71,12 +74,16 @@ Steps in actions:
 
 - [Github](https://github.com/flyerhzm/bullet)
 
+Bullet config located at `config/environments/development.rb`
+
 - [Request with N+1](http://localhost:3000/actors_n_plus_one) `app/controllers/web/actors_n_plus_one_controller.rb`
 - [Request without N+1](http://localhost:3000/actors) `app/controllers/web/actors_controller.rb`
 
 ## [New relic](https://newrelic.com/)
 
 - [Github](https://github.com/newrelic/newrelic-ruby-agent)
+
+New relic config is located at `config/newrelic.yml`
 
 1. Make several requests with and without N+1.
 2. Look at dashboard in New Relic.
@@ -86,6 +93,8 @@ Steps in actions:
 ### SimpleCov
 
 - [Github](https://github.com/simplecov-ruby/simplecov)
+
+SimpleCov config is located at `test/coverage_helper.rb`
 
 Look at `/coverage` directory for coverage report
 

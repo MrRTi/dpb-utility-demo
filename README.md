@@ -1,5 +1,7 @@
 # README
 
+[![Coverage Status](https://coveralls.io/repos/github/MrRTi/dpb-utiliy-lesson/badge.svg?branch=main)](https://coveralls.io/github/MrRTi/dpb-utiliy-lesson?branch=main)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FMrRTi%2Fdpb-utiliy-lesson%2Fbadge%3Fref%3Dmain&style=popout)](https://actions-badge.atrox.dev/MrRTi/dpb-utiliy-lesson/goto?ref=main)
 ## Prepare
 
 ### Set Secrets

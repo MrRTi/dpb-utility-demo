@@ -36,8 +36,16 @@ Go to [Site with example](http://localhost:3000)
 
 - [Documentation](https://docs.github.com/en/actions)
 
-1. **TBD: Add actions**
-1. **TBD: Add notes**
+Workflow is set in `.github/workflows/main.yml` for `main` branch
+
+Steps in actions:
+
+1. Build app
+2. Create and migrate database
+3. Run rubocop
+4. Run tests
+5. Export artifacts for coverage
+6. Upload coverage report to coveralls
 
 ## [Rollbar](https://rollbar.com/)
 

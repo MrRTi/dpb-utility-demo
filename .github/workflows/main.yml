@@ -9,7 +9,8 @@ on:
       - 'main'
 
 jobs:
-  test:
+  check_branch:
+    name: Lint and Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,6 +21,9 @@ jobs:
         env:
           RAILS_ENV: test
         run: docker-compose --file docker-compose.ci.yml run ci make init-db
+
+      - name: Lint
+        run: docker-compose --file docker-compose.ci.yml run ci bundle exec rubocop
 
       - name: Run tests
         env:

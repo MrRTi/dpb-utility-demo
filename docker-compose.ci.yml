@@ -4,6 +4,9 @@ services:
 
   ci:
     build: .
+    volumes: &web-volumes
+      - ./coverage:/app/coverage
+      - ./public/coverage:/app/public/coverage
     depends_on:
       - db
     environment:

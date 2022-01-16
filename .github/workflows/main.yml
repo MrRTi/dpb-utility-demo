@@ -13,20 +13,36 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Build
+        run: docker-compose --file docker-compose.ci.yml build
+
+      - name: Prepare test env
+        env:
+          RAILS_ENV: test
+        run: docker-compose --file docker-compose.ci.yml run ci make init-db
+
       - name: Run tests
         env:
           COVERAGE: true
           RAILS_ENV: test
           CI: true
-        run: docker-compose --file docker-compose.ci.yml run ci bash -c 'make init-db && make tests'
+        run: docker-compose --file docker-compose.ci.yml run ci make tests
 
       - name: Check coverage existence
         id: check_files
         uses: andstor/file-existence-action@v1
         with:
-          files: "coverage/lcov.info, ./coverage/lcov.info"
+          files: "app/coverage/lcov.info, coverage/lcov.info, ./coverage/lcov.info"
 
-      - name: Coveralls
+      - name: Archive coverage artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: |
+            coverage
+            public/coverage
+
+      - name: Send report to Coveralls
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

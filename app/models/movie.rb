@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class Movie < ApplicationRecord
-  has_many :characters
+  has_many :characters, dependent: :destroy
   has_and_belongs_to_many :actors
 
-  validates_presence_of :name
+  validates :name, presence: true
 end

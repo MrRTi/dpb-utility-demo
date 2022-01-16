@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Actor < ApplicationRecord
-  validates_presence_of :full_name
+  validates :full_name, presence: true
   has_and_belongs_to_many :movies
   has_and_belongs_to_many :characters
 end

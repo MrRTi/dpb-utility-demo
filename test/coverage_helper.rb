@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CoverageHelper
   require 'simplecov'
   require 'simplecov-lcov'

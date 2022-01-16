@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 data = [
   ['Prisoners', 'Hugh Jackman', 'Keller Dover'],
   ['Prisoners', 'Jake Gyllenhaal', 'Detective Loki'],

@@ -34,7 +34,7 @@ en:
   notes:
     hide_token: Keep token in env variables!
     coverage:
-      not_stored_in_repo: Coverage is not stored in repository and folder with it should be added into ''.gitignore'
+      not_stored_in_repo: Coverage is not stored in repository and folder with it should be added into '.gitignore'
       generate_on_demand: Generate coverage at CI or at demand
   external_links:
     github_actions: Actions page at github

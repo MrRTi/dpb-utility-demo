@@ -35,8 +35,7 @@ Run app
 
         make app
 
-Go to [Site with example](http://localhost:3000/)
-Go to [Site with example at Russian](http://localhost:3000/?locale=ru)
+Go to demo-app [in English](http://localhost:3000/), [in Russian](http://localhost:3000/?locale=ru)
 
 ## Github Actions
 

@@ -10,5 +10,5 @@ app:
 init-db:
 	bundle exec rails db:create db:migrate
 
-test:
+tests:
 	bundle exec rake test

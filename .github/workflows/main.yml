@@ -17,7 +17,8 @@ jobs:
         env:
           COVERAGE: true
           RAILS_ENV: test
-        run: docker-compose --file docker-compose.ci.yml run ci bash -c 'make init-db && make test'
+          CI: true
+        run: docker-compose --file docker-compose.ci.yml run ci bash -c 'make init-db && make tests'
 
       - name: Coveralls
         uses: coverallsapp/github-action@master

@@ -69,8 +69,8 @@ Steps in actions:
 
 - [Github](https://github.com/flyerhzm/bullet)
 
-- [Example with N+1](http://localhost:3000/actors_n_plus_one)
-- [Example without N+1](http://localhost:3000/actors)
+- [Request with N+1](http://localhost:3000/actors_n_plus_one) `app/controllers/web/actors_n_plus_one_controller.rb`
+- [Request without N+1](http://localhost:3000/actors) `app/controllers/web/actors_controller.rb`
 
 ## [New relic](https://newrelic.com/)
 

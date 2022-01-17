@@ -101,7 +101,7 @@ New relic config is located at `config/newrelic.yml`
 
 SimpleCov config is located at `test/coverage_helper.rb`
 
-Look at `/coverage` directory for coverage report
+Look at `/coverage` directory for coverage report if coverage folder is default. In this project coverage folder is set to 'public/coverage`
 
 ### [Coveralls](https://coveralls.io)
 

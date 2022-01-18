@@ -12,7 +12,7 @@ ru:
       new_relic: New Relic дашборд
       coveralls: Coveralls дашборд
   internal_links:
-    error_page: Страница с ошибкой
+    error_page: Страница на которой упадет ошибка
     no_n_plus_one_page: Страница без N+1
     n_plus_one_page: Страница с N+1
     coverage: Покрытие этого приложения

@@ -3,7 +3,22 @@
 module Web
   class ErrorsController < Web::ApplicationController
     def index
-      raise StandardError, 'This controller will raise an error everytime'
+      first_level
+    end
+
+    private
+
+    def first_level
+      second_level
+    end
+
+    def second_level
+      third_level
+    end
+
+    def third_level
+      # NoMethodError will be raised here
+      nil.first
     end
   end
 end

@@ -15,8 +15,6 @@
   <li>
     <%= link_to t('external_links.dashboards.rollbar'), rollbar_link, target: :_blank %>
   </li>
-</ul>
-<ul>
   <li>
     <%= link_to t('internal_links.error_page'), errors_url, target: :_blank %>
   </li>
@@ -35,21 +33,15 @@
 <h2 id='new_relic'>New Relic</h2>
 <ul>
   <li><%= t('notes.hide_token') %></li>
-</ul>
-<ul>
   <li>
     <%= link_to t('external_links.dashboards.new_relic'), @new_relic_dashboard, target: :_blank %>
   </li>
 </ul>
 
-
-
 <h2 id='coverage'>Coverage</h2>
 <ul>
   <li><%= t('notes.coverage.not_stored_in_repo') %></li>
   <li><%= t('notes.coverage.generate_on_demand') %></li>
-</ul>
-<ul>
   <li>
     <%= link_to t('internal_links.coverage'), '/coverage/index.html', target: :_blank %>
   </li>
